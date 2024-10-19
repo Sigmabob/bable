@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблицы</title>
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid black
+        }
+
+        table {
+            /* Линия между ячейками отображается только одна*/
+            border-collapse: collapse;
+            min-width: 500px;
+        }
+
+        .total-td {
+            /* Выравнивание текста по правому краю */
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <caption>Товары</caption>
+        <thead>
+            <tr>
+                <td>№ п/п</td>
+                <td>Наименование товара</td>
+                <td>Ед, измерения</td>
+                <td>Количество</td>
+                <td>цена за ед, измерения</td>
+                <td>Стоимость</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>томаты</td>
+                <td>кг</td>
+                <td>10</td>
+                <td>50</td>
+                <td>500</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>огурцы</td>
+                <td>кг</td>
+                <td>10</td>
+                <td>80</td>
+                <td>800</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>яблочки</td>
+                <td>кг</td>
+                <td>5</td>
+                <td>100</td>
+                <td>500</td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Итого</td>
+                <td colspan="5">999999999999999999999999999999999999999999999999999999999999999999999</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
